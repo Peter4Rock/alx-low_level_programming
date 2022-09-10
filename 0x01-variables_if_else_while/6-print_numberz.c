@@ -1,17 +1,23 @@
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 
 /**
- * main - Prints numbers from 0 to 9.
  *
- * Return: Always 0 (Success)
+ *main - Prints numbers from 0 to 9.
+ *
+ *
+ *
+ *Return: Always 0 (Success)
+ *
  */
 
 int main(void)
 {
-	int p;
+	int i;
 
-	for (p= 0; p <= 9; p++)
-	putchar(p);
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
 	putchar('\n');
 	return (0);
 }
