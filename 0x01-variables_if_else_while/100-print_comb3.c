@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 /**
  * main - program that prints the numbers from 01 to 89
  *
@@ -25,7 +23,7 @@ int com = 44;
 
 while (n1 <= 57)
 {
-n2 = n1 +1;
+n2 = n1 + 1;
 while (n2 <= 57)
 {
 putchar(n1);
