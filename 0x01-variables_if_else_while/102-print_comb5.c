@@ -13,9 +13,9 @@ int main(void)
 {
 int n1 = 48;
 int a = 0;
-int b;  
+int b;
 int com = 44;
-  
+
 while (a <= 99)
 {
 b = a + 1;
@@ -36,5 +36,5 @@ b += 1;
 a += 1;
 }
 putchar('\n');
-return (0);  
+return (0);
 }
