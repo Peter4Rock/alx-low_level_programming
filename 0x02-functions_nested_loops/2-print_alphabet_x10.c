@@ -3,14 +3,13 @@
 
 
 /**
- *
  * print_alphabet_x10 - Entry point
  *
- * 
+ *
  *
  * Description : prints the alphabet, in lowercase
  *
- * 
+ *
  *
  * Return 0 (Succes)
  *
@@ -19,7 +18,6 @@
 
 
 void print_alphabet_x10(void)
-
 {
 
 	int i, l;
