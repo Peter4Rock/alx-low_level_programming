@@ -1,6 +1,6 @@
-#ifndef MAIN_H
+#ifndef main_h
 
-#define MAIN_H
+#define main_h
 
 
 
@@ -9,8 +9,7 @@
 
 
 void positive_or_negative(int i);
-int largest_number(int a, int b, int c)
-int convert_day(int month, int day)
+int largest_number(int a, int b, int c);
 void print_remaining_days(int month, int day, int year)
 
 
