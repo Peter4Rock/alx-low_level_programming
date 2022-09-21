@@ -22,7 +22,7 @@ a++;
 len = a;
 
 for (b = len - 1; b >= 0; b--)
-puts(s[b]);
+puts(s | b);
 
 puts('\n');
 }
