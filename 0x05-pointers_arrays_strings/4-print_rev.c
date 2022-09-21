@@ -22,7 +22,7 @@ a++;
 len = a;
 
 for (b = len - 1; b >= 0; b--)
-write(s[b]);
+putchar(s[b]);
 
-write('\n');
+putchar('\n');
 }
