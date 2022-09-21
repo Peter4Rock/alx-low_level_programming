@@ -46,7 +46,7 @@ void print_rev(char *s)
 
 	for (b = len - 1; b >= 0; b--)
 
-		printf("Size of type 'char' on my computer: %lu bytes\n", sizeof(char));
+		_putchar(s[b]);
 
 	 
 
