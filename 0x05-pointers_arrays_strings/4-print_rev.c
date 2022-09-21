@@ -47,10 +47,10 @@ void print_rev(char *s)
 
 	for (b = len - 1; b >= 0; b--)
 
-		puts(*s[b]);
+		puts(s[b]);
 
 	 
 
-	_print_rev('\n');
+	print_rev('\n');
 
 }
