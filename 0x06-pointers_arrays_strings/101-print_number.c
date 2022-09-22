@@ -1,48 +1,27 @@
 #include "main.h"
 
-
-
 /**
- * print_rev - prints a string in reverse, followed by  a new line
- * @s: string to be printed
+ * print_number - prints an integer
+ * only using putchar function
+ * without arrays and pointers
+ * @n: integer
+ *
+ * Return: void
  */
-
-void print_rev(char *s)
-
+void print_number(int n)
 {
-
-	int i, j, len;
-
+	unsigned int num;
 
 
-	i = 0;
-
-
-
-	while (s[i] != '\0')
-
+	num = n;
+	if (n < 0)
 	{
-
-		i++;
-
+		_putchar(45);
+		num = -n;
 	}
-
-
-
-	len = i;
-
-
-
-	for (j = len - 1; j >= 0; j--)
-
+	if (num / 10)
 	{
-
-		_putchar(s[j]);
-
+		print_number(num / 10);
 	}
-
-
-
-	_putchar('\n');
-
+	_putchar((num % 10) + '0');
 }
