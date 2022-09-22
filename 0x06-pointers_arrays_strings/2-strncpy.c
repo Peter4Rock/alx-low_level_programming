@@ -35,13 +35,12 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 dest[i] = src[i];
 
 /**
+ * if the length of source is less than n
  *
- * 	 * if the length of source is less than n
+ * write additional nullbytes to dest to
  *
- * 	 	 * write additional nullbytes to dest to
- *
- * 	 	 	 * ensure that a total of n bytes is written
- * 	 	 	 	*/
+ * ensure that a total of n bytes is written
+ */
 
 while (i < n)
 
