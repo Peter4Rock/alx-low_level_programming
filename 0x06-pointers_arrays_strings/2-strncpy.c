@@ -20,8 +20,7 @@ int i;
 
 
 /**
- * src - Functions as a searching sequence 
- *
+ * src - Functions as a searching sequence
  * iterate through src array
  * where if there is no null byte
  *
