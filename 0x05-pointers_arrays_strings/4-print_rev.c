@@ -1,56 +1,34 @@
 #include "main.h"
-#include "_putchar.c"
-
- 
 
 /**
- *
- * * print_rev - entry point
- *
- * * @s: inputed string
- *
- * * Description: prints a string, in reverse, followed by a new line
- *
- * *
- *
- * * Returns: no return value
- *
- * */
-
- 
-
+ * print_rev - prints a string in reverse, followed by  a new line
+ * @s: string to be printed
+ */
 void print_rev(char *s)
+{
+int i, j, len;
 
+i = 0;
+
+
+
+while (s[i] != '\0')
 {
 
-	int a, b, len;
+i++;
 
-	 
+}
 
-	a = 0;
+len = i;
 
-	 
 
-	while (s[a] != '\0')
+for (j = len - 1; j >= 0; j--)
+{
 
-	{
+_putchar(s[j]);
 
-		a++;
+}
 
-	}
-
-	 
-
-	len = a;
-
-	 
-
-	for (b = len - 1; b >= 0; b--)
-
-		puts(s[b]);
-
-	 
-
-	print_rev('\n');
+_putchar('\n');
 
 }
