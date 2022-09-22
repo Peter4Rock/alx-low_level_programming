@@ -20,7 +20,7 @@ int i;
 
 
 /**
- * iterate through src array
+ * i - iterate through src array
  * where if there is no null byte
  *
  * among the first n bytes of source
@@ -43,7 +43,6 @@ dest[i] = src[i];
  */
 
 while (i < n)
-
 {
 
 dest[i] = '\0';
