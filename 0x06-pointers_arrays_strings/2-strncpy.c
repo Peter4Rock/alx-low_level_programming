@@ -20,7 +20,9 @@ int i;
 
 
 /**
- * i - iterate through src array
+ * src - Functions as a searching sequence 
+ *
+ * iterate through src array
  * where if there is no null byte
  *
  * among the first n bytes of source
@@ -35,6 +37,7 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 dest[i] = src[i];
 
 /**
+ * n - Total size of the string to be copied
  * if the length of source is less than n
  *
  * write additional nullbytes to dest to
