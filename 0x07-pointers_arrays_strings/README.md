@@ -41,3 +41,12 @@ mandatory
 
 
 
+8. Double pointer, double fun
+
+#advanced
+
+
+
+9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+
+#advanced
