@@ -1,51 +1,21 @@
 #include "main.h"
 
 /**
- * _strlen - returning the length of a string.
+ * puts2 - prints every other character of a string,
+ * staring with the first character.
+ * @str: A pointer to int that is to be printed
  *
- * @s: a pointer to a char
- *
- * Return: length of a string
- *
- **/
-
-
-
-int _strlen(char *s)
-{
-int l, i = 0;
-
-while (s[i] != '\0')
-{
-i++;
-}
-
-l = i;
-
-return (l);
-}
-
-
-
-/**
- * puts2 - prints one char out of 2 of a string
- *
- * @str: a pointer to string
- *
- * Return: nothing
- *
+ * Return: void
  */
-
-
-
 void puts2(char *str)
 {
-int i;
-int size = _strlen(str);
+	int b;
 
-for (i = 0; i < size; i += 2)
-{
-_putchar(str[i]);
-}
-_putchar('\n');
+
+	for (b = 0; str[b] != '\0'; b++)
+	{
+		if (b % 2 == 0)
+			_putchar (str[b]);
+	}
+	_putchar('\n');
 }
