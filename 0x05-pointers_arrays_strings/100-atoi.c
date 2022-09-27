@@ -39,5 +39,5 @@ i++;
 }
 
 m = m * -1;
-return (n * m);
+return (n *m);
 }
