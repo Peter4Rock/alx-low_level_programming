@@ -1,65 +1,25 @@
 #include "main.h"
 
-
-
 /**
- * _strlen - get the length of a string.
+ * puts_half - prints half of a string
+ * @str: A pointer of an int that is changed
  *
- * @s: a pointer to a char
- *
- * Return: length of a string
- *
- **/
-
-int _strlen(char *s)
-{
-int l, i = 0;
-
-while (s[i] != '\0')
-{
-
-i++;
-
-}
-l = i;
-
-return (l);
-
-}
-
-
-
-/**
- * puts_half -  prints half of a string
- *
- * @str: a pointer to string
- *
- * Return: string
- *
- **/
-
+ * Return: Always 0(Success)
+ */
 void puts_half(char *str)
 {
-int i;
-int size = _strlen(str);
+	int s, last;
 
-if (size % 2 != 0)
+	s = 0;
+	while (str[s] != '\0')
+	{
+		s++;
+	}
 
-{
-
-i = (size / 2) + 1;
-
-}
-
-else
-{
-i = size / 2;
-}
-
-for (i = i; i < size; i++)
-{
-_putchar(str[i]);
-}
-
-_putchar('\n');
+	last = (s + 1) / 2;
+	for (s = last; str[s]; s++)
+	{
+		_putchar (str[s]);
+	}
+	_putchar ('\n');
 }
