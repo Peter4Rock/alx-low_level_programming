@@ -1,44 +1,46 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Program entry point
- * @argc: number of command line arguments
- * @argv: array of command line arguments
+ * main - Entry point.
  *
- * Return: 1 if number of arguments is not exactly, 0 if otherwise
+ * Description: minimum number of coins to make
+ * change for an amount of money
+ * @argc: number of program arguments.
+ * @argv: array of arguments.
+ *
+ * Return: 0 (Success), 1 (Error)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int coins, i, amount;
-	int value[5] = {25, 10, 5, 2, 1};
 
-	coins = 0;
-	amount = atoi(argv[argc - 1]);
+	int n, i, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (amount <= 0)
+
+	n = atoi(argv[1]);
+	result = 0;
+
+	if (n < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+
+	for (i = 0; i < 5 && n >= 0; i++)
 	{
-		for (i = 0; i < 5; i++)
+		while (n >= coins[i])
 		{
-			if (value[i] <= amount)
-			{
-				coins += (amount / value[i]);
-				amount += (amount / value[i]) * value[i];
-				if (amount == 0)
-				{
-					printf("%d\n", coins);
-					break;
-				}
-			}
+			result++;
+			n -= coins[i];
 		}
 	}
+
+	printf("%d\n", result);
 	return (0);
 }
