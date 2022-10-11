@@ -6,9 +6,9 @@
 
 /**
  * struct dog - structure
- * @name - name
- * @age - age
- * @owner - owner
+ * @name: name
+ * @age: age
+ * @owner: owner
  */
 
 typedef struct dog
